@@ -601,11 +601,14 @@
 		left: 5px;
 		max-width: 300px;
 		width: 100%;
-		z-index: 100;
+		z-index: -100;
 		opacity: 0;
+		visibility: hidden;
 	}
 	.b-aside-wrapper.active{
 		opacity: 1;
+		visibility: visible;
+		z-index: 100;
 	}
 	.b-catalog .b-content-top{
 		margin: 30px 0 0 0;
