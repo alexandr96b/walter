@@ -69,7 +69,7 @@ button{
 	width:auto;
 	outline: none;
 }
-button:hover , button:focus , button:active{
+button:hover , button:focus , button:active , a{
 	outline: none;
 }
 button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
@@ -121,6 +121,9 @@ button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
 button:active,
 button:focus{
 	outline: none;
+}
+.slick-slide , .slick-slide:focus , .slick-slide:active{
+	outline: none !important;
 }
 
 /*== inputs
@@ -383,6 +386,11 @@ textarea{
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
     border-right: 1px solid rgba(138, 138, 138, 0.4);
+	transition: 0.3s;
+}
+.b-social ul li a:hover{
+	opacity: 0.6;
+	transition: 0.3s;
 }
 .b-social ul li:last-child a{
 	border: none;
@@ -623,6 +631,25 @@ textarea{
 }
 .b-about-photo__item{
 	display: block;
+	position: relative;
+}
+.b-about-photo__item:before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: url(../images/eye.svg) center no-repeat rgba(212, 177, 136, 0.5);
+	background-size: 45px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+}
+.b-about-photo__item:hover:before{
+	opacity: 1;
+	visibility: visible;
+	transition: 0.3s;
 }
 .b-about-photo__right{
 	width: 50%;
@@ -860,6 +887,25 @@ textarea{
 	justify-content: center;
 	align-items: flex-end;
 	margin: 0 0 15px 0;
+	position: relative;
+}
+.b-product-item__img:before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: url(../images/eye.svg) center no-repeat rgba(212, 177, 136, 0.5);
+	background-size: 45px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+}
+.b-product-item:hover .b-product-item__img:before{
+	opacity: 1;
+	visibility: visible;
+	transition: 0.3s;
 }
 .b-product-item__text{
 	margin: 0 0 15px 0;
@@ -1004,6 +1050,11 @@ textarea{
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 22px;	
+	transition: 0.3s;
+}
+.b-footer-item__text a:hover{
+	opacity: 0.8;
+	transition: 0.3s;
 }
 .b-footer-list{
 	padding: 10px 0 10px 85px;
@@ -1033,6 +1084,9 @@ textarea{
 	justify-content: flex-start;
 	align-items: center;
 	text-decoration: none;
+}
+.b-footer-list ul li a:hover{
+	opacity: 0.8;
 }
 .b-footer-list ul li a:before{
 	content: "›";
@@ -1075,6 +1129,9 @@ textarea{
 .b-footer-social ul li a{
 	width: 22px;
 	display: block;
+}
+.b-footer-social ul li a:hover{
+	opacity: 0.8;
 }
 .b-footer-right{
 	position: relative;
@@ -1138,6 +1195,9 @@ textarea{
 	background: transparent;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 	margin: 0 0 10px 0;
+}
+.b-footer-input:focus{
+	border-color: #cfb594;
 }
 .b-footer-input__name{
 	background: transparent url(../images/user-ico.png) no-repeat;
@@ -1492,6 +1552,7 @@ textarea{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	transition: 0.3s;
 }
 .b-filter-top__ico:before{
 	position: absolute;
@@ -1501,7 +1562,8 @@ textarea{
 	margin: -1px 0 0 -4px;
 	width: 8px;
 	height: 2px;
-	background: #ceb694;	
+	background: #ceb694;
+	transition: 0.3s;	
 }
 .b-filter-top__ico:after{
 	position: absolute;
@@ -1514,6 +1576,15 @@ textarea{
 	background: #ceb694;	
 	opacity: 0;
 	visibility: hidden;
+	transition: 0.3s;
+}
+.b-filter-top:hover .b-filter-top__ico{
+	background: #ceb694;
+	transition: 0.3s;
+}
+.b-filter-top:hover .b-filter-top__ico:after , .b-filter-top:hover  .b-filter-top__ico:before{
+	background: #ffffff;
+	transition: 0.3s;
 }
 .b-filter-top.active .b-filter-top__ico:after{
 	opacity: 1;
@@ -1731,6 +1802,26 @@ textarea{
 	justify-content: center;
 	align-items: center;
 	margin: 0 0 8px 0;
+	position: relative;
+	cursor: pointer;
+}
+.b-card-slider__pager__item:before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: url(../images/eye.svg) center no-repeat rgba(212, 177, 136, 0.5);
+	background-size: 45px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+}
+.b-card-slider__pager__item:hover:before{
+	opacity: 1;
+	visibility: visible;
+	transition: 0.3s;
 }
 .b-card-arrow{
 	display: block;
@@ -1802,6 +1893,13 @@ textarea{
 	font-weight: 400;
 	line-height: 16px;
 	margin: 20px 0 0 0;
+	transition: 0.3s;
+}
+.btn-download:hover{
+	background: #d4b188 url(../images/pdf-ico2.png) no-repeat;
+	background-position: right 15px center;
+	color: #ffffff;
+	transition: 0.3s;
 }
 .b-card-right{
 	flex-grow: 1;
@@ -1935,7 +2033,14 @@ textarea{
 	line-height:22px;
 	text-transform: uppercase;
 }
-
+.b-card-btn:hover{
+    background: #e2b177;
+    transition: 0.3s;
+}
+.b-card-right .b-select:focus{
+	border-color: #d4b188;
+	transition: 0.3s;
+}
 
 .b-card-info{
 	display: flex;
