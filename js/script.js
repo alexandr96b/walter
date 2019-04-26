@@ -1,11 +1,95 @@
 $(document).ready(function () {
 
+$('.b-card-next').on("click", function() {
+    $('.b-card-slider__big').slick("slickNext"); 
+})
+$('.b-card-prev').on("click", function() {
+    $('.b-card-slider__big').slick("slickPrev"); 
+})
+
+$('.b-card-slider__big').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  fade: false,
+  arrows: false,
+  asNavFor: '.b-card-slider__pager__wrap',
+  responsive: [
+  {
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }
+  // You can unslick at a given breakpoint now by adding:
+  // settings: "unslick"
+  // instead of a settings object
+]
+});
+$('.b-card-slider__pager__wrap').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  vertical: true,
+  verticalSwiping: true,
+  dots: false,
+  asNavFor: '.b-card-slider__big',
+  focusOnSelect: true,
+  variableWidth: false,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        vertical: false,
+        verticalSwiping: false,        
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        vertical: false,
+        verticalSwiping: false,        
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+
+
 $('.b-main-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: false,
     infinity: true,
-    autoplay: true,
+
     adaptiveHeight: true,
     focusOnSelect: true,
     arrows: false,
@@ -36,6 +120,8 @@ $('.b-course-slider').slick({
     breakpoint: 992,
     settings: {
       slidesToShow: 1,
+      variableWidth: false,
+      centerMode: false,
       slidesToScroll: 1
     }
   },
@@ -43,9 +129,11 @@ $('.b-course-slider').slick({
     breakpoint: 768,
     settings: {
       slidesToShow: 1,
+      variableWidth: false,
+      centerMode: false,
       slidesToScroll: 1
     }
-  }
+  } 
   // You can unslick at a given breakpoint now by adding:
   // settings: "unslick"
   // instead of a settings object
@@ -80,10 +168,19 @@ $('.b-product-slider > .row').slick({
   {
     breakpoint: 768,
     settings: {
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1
     }
-  }
+  },
+  {
+    breakpoint: 485,
+    settings: {
+      slidesToShow: 1,
+      variableWidth: false,
+      centerMode: false,
+      slidesToScroll: 1
+    }
+  }   
   // You can unslick at a given breakpoint now by adding:
   // settings: "unslick"
   // instead of a settings object
@@ -143,23 +240,32 @@ $('.b-filter-top').click(function(){
 
 
 $('.menu-icon').click(function(){
-  $('.b-menu').toggleClass('active');
+  $('.b-nav').toggleClass('active');
   $(this).toggleClass('active');
 });
 
 $(document).on('click', function(e) {
-  if (!$(e.target).closest(".menu-icon , .b-menu ul li a").length) {
-    $('.b-menu').removeClass('active');
+  if (!$(e.target).closest(".menu-icon , .b-nav ul li a").length) {
+    $('.b-nav').removeClass('active');
     $('.menu-icon').removeClass('active');
   }
   e.stopPropagation();
 });
 
-$('.menu-close').click(function(){
-  $('.menu-icon').removeClass('active');
-  $('.b-menu').removeClass('active');
+ 
+
+$('.b-aside-xs .b-content-top').click(function(){
+  $('.b-aside-wrapper').toggleClass('active');
+  $(this).toggleClass('active');
 });
 
+$(document).on('click', function(e) {
+  if (!$(e.target).closest(".b-aside-xs .b-content-top , .b-aside-wrapper").length) {
+    $('.b-aside-wrapper').removeClass('active');
+    $('.b-aside-xs .b-content-top').removeClass('active');
+  }
+  e.stopPropagation();
+});
 
 
 

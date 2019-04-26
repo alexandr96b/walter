@@ -41,6 +41,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xl">
+						<div class="b-mobile">
+						    <div class="menu-icon">
+						        <div class="menu-icon__wrapper">
+						            <span class="b-menu__icon">
+						                <i class="b-menu__line b-menu__line_1"></i>
+						                <i class="b-menu__line b-menu__line_2"></i>
+						                <i class="b-menu__line b-menu__line_3"></i>
+						            </span>
+						        </div>
+						    </div> 
+						</div>							
 						<a href="" class="b-logo">
 							<img src="images/logo.png" alt="">
 						</a>
@@ -83,112 +94,117 @@
 					</div>
 					<div class="b-content-wrap">
 						<div class="row">
-							<div class="col-xl-3">
+							<div class="b-aside-xs col-xl-3 col-lg-3 col-md-4">
 								<aside class="b-aside">
 									<div class="b-content-top">
 										<span>Produktfilter</span>
+										<div class="mobile-filters">
+											<i class="fas fa-filter"></i>
+										</div>
 									</div>
-									<div class="b-filter-price">
-										<div class="b-aside-wrap">
-											<span class="b-filter-price__title">Preis (€)</span>
-											<div class="b-filter-price__wrapper">
-												<input class="b-filter-price__input" type="text" placeholder="von" id="minCost" value="von"/>
-												<input class="b-filter-price__input" type="text" placeholder="bis zu" id="maxCost" value="bis zu"/>
+									<div class="b-aside-wrapper">
+										<div class="b-filter-price">
+											<div class="b-aside-wrap">
+												<span class="b-filter-price__title">Preis (€)</span>
+												<div class="b-filter-price__wrapper">
+													<input class="b-filter-price__input" type="text" placeholder="von" id="minCost" value="von"/>
+													<input class="b-filter-price__input" type="text" placeholder="bis zu" id="maxCost" value="bis zu"/>
+												</div>
+												<div class="b-filter-price" id="slider"></div>
 											</div>
-											<div class="b-filter-price" id="slider"></div>
+										</div>
+										<div class="b-filters">
+											<div class="b-aside-wrap">
+												<div class="b-filter-top active">
+													<span>Die Marke</span>
+													<div class="b-filter-top__ico"></div>
+												</div>
+												<div class="b-filters-block">
+													<div class="b-checkbox">
+														<input type="checkbox" checked id="q1" name="q4" />
+														<label for="q1"><span></span><i>Mungo</i></label>  
+													</div>	
+													<div class="b-checkbox">
+														<input type="checkbox" id="q2" name="q4" />
+														<label for="q2"><span></span><i>Bralo</i></label>  
+													</div>	
+													<div class="b-checkbox">
+														<input type="checkbox" id="q3" name="q4" />
+														<label for="q3"><span></span><i>Bralo</i></label>  
+													</div>	
+													<div class="b-checkbox">
+														<input type="checkbox" id="q4" name="q4" />
+														<label for="q4"><span></span><i>TECHNOX</i></label>  
+													</div>	
+													<div class="b-checkbox">
+														<input type="checkbox" id="q5" name="q4" />
+														<label for="q5"><span></span><i>Mungo</i></label>  
+													</div>	
+													<div class="b-checkbox">
+														<input type="checkbox" id="q6" name="q4" />
+														<label for="q6"><span></span><i>Bralo</i></label>  
+													</div>	
+													<div class="b-checkbox">
+														<input type="checkbox" id="q7" name="q4" />
+														<label for="q7"><span></span><i>Bralo</i></label>  
+													</div>	
+													<div class="b-checkbox">
+														<input type="checkbox" id="q8" name="q4" />
+														<label for="q8"><span></span><i>TECHNOX</i></label>  
+													</div>																		
+												</div>
+											</div>
+										</div>
+										<div class="b-filters">
+											<div class="b-aside-wrap">
+												<div class="b-filter-top active">
+													<span>Parameter</span>
+													<div class="b-filter-top__ico"></div>
+												</div>
+												<div class="b-filters-select">
+													<select class="b-select">
+														<option value="">Lieber</option>
+														<option value="">Lieber</option>
+														<option value="">Lieber</option>
+													</select>
+													<select class="b-select">
+														<option value="">Ml Volumen</option>
+														<option value="">Ml Volumen</option>
+														<option value="">Ml Volumen</option>
+													</select>
+													<select class="b-select">
+														<option value="">Farbe</option>
+														<option value="">Farbe</option>
+														<option value="">Farbe</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="b-filters">
+											<div class="b-aside-wrap">
+												<div class="b-checkbox">
+													<input type="checkbox" checked id="w1" name="q4" />
+													<label for="w1"><span></span><i>Neu</i></label>  
+												</div>	
+												<div class="b-checkbox">
+													<input type="checkbox" id="w2" name="q4" />
+													<label for="w2"><span></span><i>Aktion</i></label>  
+												</div>	
+												<div class="b-checkbox">
+													<input type="checkbox" id="w3" name="q4" />
+													<label for="w3"><span></span><i>Rabatt</i></label>  
+												</div>																			
+											</div>
+										</div>																
+										<div class="b-filters-btns">
+											<button class="btn-filter btn">Optionen anzeigen</button>
+											<button class="btn-clear btn">Filter zurücksetzen</button>
 										</div>
 									</div>
 
-									<div class="b-filters">
-										<div class="b-aside-wrap">
-											<div class="b-filter-top active">
-												<span>Die Marke</span>
-												<div class="b-filter-top__ico"></div>
-											</div>
-											<div class="b-filters-block">
-												<div class="b-checkbox">
-													<input type="checkbox" checked id="q1" name="q4" />
-													<label for="q1"><span></span><i>Mungo</i></label>  
-												</div>	
-												<div class="b-checkbox">
-													<input type="checkbox" id="q2" name="q4" />
-													<label for="q2"><span></span><i>Bralo</i></label>  
-												</div>	
-												<div class="b-checkbox">
-													<input type="checkbox" id="q3" name="q4" />
-													<label for="q3"><span></span><i>Bralo</i></label>  
-												</div>	
-												<div class="b-checkbox">
-													<input type="checkbox" id="q4" name="q4" />
-													<label for="q4"><span></span><i>TECHNOX</i></label>  
-												</div>	
-												<div class="b-checkbox">
-													<input type="checkbox" id="q5" name="q4" />
-													<label for="q5"><span></span><i>Mungo</i></label>  
-												</div>	
-												<div class="b-checkbox">
-													<input type="checkbox" id="q6" name="q4" />
-													<label for="q6"><span></span><i>Bralo</i></label>  
-												</div>	
-												<div class="b-checkbox">
-													<input type="checkbox" id="q7" name="q4" />
-													<label for="q7"><span></span><i>Bralo</i></label>  
-												</div>	
-												<div class="b-checkbox">
-													<input type="checkbox" id="q8" name="q4" />
-													<label for="q8"><span></span><i>TECHNOX</i></label>  
-												</div>																		
-											</div>
-										</div>
-									</div>
-									<div class="b-filters">
-										<div class="b-aside-wrap">
-											<div class="b-filter-top active">
-												<span>Parameter</span>
-												<div class="b-filter-top__ico"></div>
-											</div>
-											<div class="b-filters-select">
-												<select class="b-select">
-													<option value="">Lieber</option>
-													<option value="">Lieber</option>
-													<option value="">Lieber</option>
-												</select>
-												<select class="b-select">
-													<option value="">Ml Volumen</option>
-													<option value="">Ml Volumen</option>
-													<option value="">Ml Volumen</option>
-												</select>
-												<select class="b-select">
-													<option value="">Farbe</option>
-													<option value="">Farbe</option>
-													<option value="">Farbe</option>
-												</select>
-											</div>
-										</div>
-									</div>
-									<div class="b-filters">
-										<div class="b-aside-wrap">
-											<div class="b-checkbox">
-												<input type="checkbox" checked id="w1" name="q4" />
-												<label for="w1"><span></span><i>Neu</i></label>  
-											</div>	
-											<div class="b-checkbox">
-												<input type="checkbox" id="w2" name="q4" />
-												<label for="w2"><span></span><i>Aktion</i></label>  
-											</div>	
-											<div class="b-checkbox">
-												<input type="checkbox" id="w3" name="q4" />
-												<label for="w3"><span></span><i>Rabatt</i></label>  
-											</div>																			
-										</div>
-									</div>																
-									<div class="b-filters-btns">
-										<button class="btn-filter btn">Optionen anzeigen</button>
-										<button class="btn-clear btn">Filter zurücksetzen</button>
-									</div>
 								</aside>
 							</div>
-							<div class="col-xl-9">
+							<div class="b-catalog col-xl-9 col-lg-9 col-md-8">
 								<div class="row">
 									<div class="col-xl">
 										<div class="b-content-top">
@@ -503,6 +519,7 @@
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
