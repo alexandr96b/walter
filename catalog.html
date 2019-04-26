@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Title</title>
+    <meta property="og:title" content="" /> 
+    <meta property="og:description" content="" />
+    <meta name="title" content="" /> 
+    <meta name="description" content="" /> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/jquery-ui.min.css" rel="stylesheet">
+	<link href="webfonts/fonts.css" rel="stylesheet">
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href=”images/favicon.ico” rel=”shortcut icon” type=”image/x-icon”>
+	<link rel="shortcut icon" href="#">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png" />	
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+
+<div class="b-container">
+		<!-- begin b-header -->
+		<header class="b-header b-header-inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<a href="" class="b-logo">
+							<img src="images/logo.png" alt="">
+						</a>
+						<div class="b-header-right">
+							<div class="b-nav">
+								<ul>
+									<li class="active"><a href="">Home</a></li>
+									<li><a href="">Über mich</a></li>
+									<li><a href="">Kurse</a></li>
+									<li><a href="">Shop</a></li>
+									<li><a href="">News</a></li>
+									<li><a href="">Galerie</a></li>
+									<li><a href="">Kontakt</a></li>
+								</ul>
+							</div>
+							<div class="b-cart">
+								<div class="b-cart__numb">14</div>
+								<a href="" class="b-cart__ico"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end b-header --> 
+		
+		<div class="b-wrap">
+			<!-- begin b-content -->
+			<section class="b-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl">
+							<div class="b-breadcreambs">
+								<ul>
+									<li><a href="">Home<span>→</span></a></li>
+									<li><a href="">Shop<span>→</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="b-content-wrap">
+						<div class="row">
+							<div class="col-xl-3">
+								<aside class="b-aside">
+									<div class="b-content-top">
+										<span>Produktfilter</span>
+									</div>
+									<div class="b-filter-price">
+										<div class="b-aside-wrap">
+											<span class="b-filter-price__title">Preis (€)</span>
+											<div class="b-filter-price__wrapper">
+												<input class="b-filter-price__input" type="text" placeholder="von" id="minCost" value="von"/>
+												<input class="b-filter-price__input" type="text" placeholder="bis zu" id="maxCost" value="bis zu"/>
+											</div>
+											<div class="b-filter-price" id="slider"></div>
+										</div>
+									</div>
+
+									<div class="b-filters">
+										<div class="b-aside-wrap">
+											<div class="b-filter-top active">
+												<span>Die Marke</span>
+												<div class="b-filter-top__ico"></div>
+											</div>
+											<div class="b-filters-block">
+												<div class="b-checkbox">
+													<input type="checkbox" checked id="q1" name="q4" />
+													<label for="q1"><span></span><i>Mungo</i></label>  
+												</div>	
+												<div class="b-checkbox">
+													<input type="checkbox" id="q2" name="q4" />
+													<label for="q2"><span></span><i>Bralo</i></label>  
+												</div>	
+												<div class="b-checkbox">
+													<input type="checkbox" id="q3" name="q4" />
+													<label for="q3"><span></span><i>Bralo</i></label>  
+												</div>	
+												<div class="b-checkbox">
+													<input type="checkbox" id="q4" name="q4" />
+													<label for="q4"><span></span><i>TECHNOX</i></label>  
+												</div>	
+												<div class="b-checkbox">
+													<input type="checkbox" id="q5" name="q4" />
+													<label for="q5"><span></span><i>Mungo</i></label>  
+												</div>	
+												<div class="b-checkbox">
+													<input type="checkbox" id="q6" name="q4" />
+													<label for="q6"><span></span><i>Bralo</i></label>  
+												</div>	
+												<div class="b-checkbox">
+													<input type="checkbox" id="q7" name="q4" />
+													<label for="q7"><span></span><i>Bralo</i></label>  
+												</div>	
+												<div class="b-checkbox">
+													<input type="checkbox" id="q8" name="q4" />
+													<label for="q8"><span></span><i>TECHNOX</i></label>  
+												</div>																		
+											</div>
+										</div>
+									</div>
+									<div class="b-filters">
+										<div class="b-aside-wrap">
+											<div class="b-filter-top active">
+												<span>Parameter</span>
+												<div class="b-filter-top__ico"></div>
+											</div>
+											<div class="b-filters-select">
+												<select class="b-select">
+													<option value="">Lieber</option>
+													<option value="">Lieber</option>
+													<option value="">Lieber</option>
+												</select>
+												<select class="b-select">
+													<option value="">Ml Volumen</option>
+													<option value="">Ml Volumen</option>
+													<option value="">Ml Volumen</option>
+												</select>
+												<select class="b-select">
+													<option value="">Farbe</option>
+													<option value="">Farbe</option>
+													<option value="">Farbe</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="b-filters">
+										<div class="b-aside-wrap">
+											<div class="b-checkbox">
+												<input type="checkbox" checked id="w1" name="q4" />
+												<label for="w1"><span></span><i>Neu</i></label>  
+											</div>	
+											<div class="b-checkbox">
+												<input type="checkbox" id="w2" name="q4" />
+												<label for="w2"><span></span><i>Aktion</i></label>  
+											</div>	
+											<div class="b-checkbox">
+												<input type="checkbox" id="w3" name="q4" />
+												<label for="w3"><span></span><i>Rabatt</i></label>  
+											</div>																			
+										</div>
+									</div>																
+									<div class="b-filters-btns">
+										<button class="btn-filter btn">Optionen anzeigen</button>
+										<button class="btn-clear btn">Filter zurücksetzen</button>
+									</div>
+								</aside>
+							</div>
+							<div class="col-xl-9">
+								<div class="row">
+									<div class="col-xl">
+										<div class="b-content-top">
+											<span>Unsere produkte</span>
+											<p>Dies war die Tatsache, dass Frauen weniger häufig mit dem Nägelpolieren begannen. In der Zeitschrift Vogue erschienen Informationen über das Werkzeug, mit dem Nägel glänzen können. Das Werkzeug musste auf die Nägel aufgetragen und in die Nagelplatte eingerieben werden.</p>
+										</div>									
+									</div>
+								</div>
+								<div class="row">
+									<div class="b-product-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<div class="b-product-item">
+											<a href="" class="b-product-link"></a>
+											<div class="b-product-item__sale">
+												-50%
+											</div>
+											<div class="b-product-item__img">
+												<img src="images/b-product-item__img.png" alt="">
+											</div>
+											<div class="b-product-item__text">
+												<b>Starter Kit für den 
+												Maniküremeister</b>
+												<p>Professionelle UV-Lampe</p>
+											</div>
+											<div class="b-product-item__bottom">
+												<span class="b-product-item__price">7 255 €</span>
+												<button class="btn-product btn">IN DEN WARENKORB</button> 
+											</div>
+										</div>
+									</div>
+									<div class="b-product-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<div class="b-product-item">
+											<a href="" class="b-product-link"></a>
+											<div class="b-product-item__img">
+												<img src="images/b-product-item__img2.png" alt="">
+											</div>
+											<div class="b-product-item__text">
+												<b>Starter Kit für den 
+												Maniküremeister</b>
+												<p>Professionelle UV-Lampe</p>
+											</div>
+											<div class="b-product-item__bottom">
+												<span class="b-product-item__price">7 255 €</span>
+												<button class="btn-product btn">IN DEN WARENKORB</button> 
+											</div>
+										</div>
+									</div>
+									<div class="b-product-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<div class="b-product-item">
+											<a href="" class="b-product-link"></a>
+											<div class="b-product-item__sale">
+												-50%
+											</div>
+											<div class="b-product-item__img">
+												<img src="images/b-product-item__img3.png" alt="">
+											</div>
+											<div class="b-product-item__text">
+												<b>Starter Kit für den 
+												Maniküremeister</b>
+												<p>Professionelle UV-Lampe</p>
+											</div>
+											<div class="b-product-item__bottom">
+												<span class="b-product-item__price">7 255 €</span>
+												<button class="btn-product btn">IN DEN WARENKORB</button> 
+											</div>
+										</div>
+									</div>
+									<div class="b-product-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<div class="b-product-item">
+											<a href="" class="b-product-link"></a>
+											<div class="b-product-item__sale">
+												-50%
+											</div>
+											<div class="b-product-item__img">
+												<img src="images/b-product-item__img.jpg" alt="">
+											</div>
+											<div class="b-product-item__text">
+												<b>Starter Kit für den 
+												Maniküremeister</b>
+												<p>Professionelle UV-Lampe</p>
+											</div>
+											<div class="b-product-item__bottom">
+												<span class="b-product-item__price">7 255 €</span>
+												<button class="btn-product btn">IN DEN WARENKORB</button> 
+											</div>
+										</div>
+									</div>
+									<div class="b-product-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<div class="b-product-item">
+											<a href="" class="b-product-link"></a>
+											<div class="b-product-item__img">
+												<img src="images/b-product-item__img2.jpg" alt="">
+											</div>
+											<div class="b-product-item__text">
+												<b>Starter Kit für den 
+												Maniküremeister</b>
+												<p>Professionelle UV-Lampe</p>
+											</div>
+											<div class="b-product-item__bottom">
+												<span class="b-product-item__price">7 255 €</span>
+												<button class="btn-product btn">IN DEN WARENKORB</button> 
+											</div>
+										</div>
+									</div>
+									<div class="b-product-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<div class="b-product-item">
+											<a href="" class="b-product-link"></a>
+											<div class="b-product-item__sale">
+												-50%
+											</div>
+											<div class="b-product-item__img">
+												<img src="images/b-product-item__img3.jpg" alt="">
+											</div>
+											<div class="b-product-item__text">
+												<b>Starter Kit für den 
+												Maniküremeister</b>
+												<p>Professionelle UV-Lampe</p>
+											</div>
+											<div class="b-product-item__bottom">
+												<span class="b-product-item__price">7 255 €</span>
+												<button class="btn-product btn">IN DEN WARENKORB</button> 
+											</div>
+										</div>
+									</div>
+									<div class="b-product-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<div class="b-product-item">
+											<a href="" class="b-product-link"></a>
+											<div class="b-product-item__sale">
+												-50%
+											</div>
+											<div class="b-product-item__img">
+												<img src="images/b-product-item__img.jpg" alt="">
+											</div>
+											<div class="b-product-item__text">
+												<b>Starter Kit für den 
+												Maniküremeister</b>
+												<p>Professionelle UV-Lampe</p>
+											</div>
+											<div class="b-product-item__bottom">
+												<span class="b-product-item__price">7 255 €</span>
+												<button class="btn-product btn">IN DEN WARENKORB</button> 
+											</div>
+										</div>
+									</div>
+									<div class="b-product-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<div class="b-product-item">
+											<a href="" class="b-product-link"></a>
+											<div class="b-product-item__img">
+												<img src="images/b-product-item__img2.jpg" alt="">
+											</div>
+											<div class="b-product-item__text">
+												<b>Starter Kit für den 
+												Maniküremeister</b>
+												<p>Professionelle UV-Lampe</p>
+											</div>
+											<div class="b-product-item__bottom">
+												<span class="b-product-item__price">7 255 €</span>
+												<button class="btn-product btn">IN DEN WARENKORB</button> 
+											</div>
+										</div>
+									</div>
+									<div class="b-product-col col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<div class="b-product-item">
+											<a href="" class="b-product-link"></a>
+											<div class="b-product-item__sale">
+												-50%
+											</div>
+											<div class="b-product-item__img">
+												<img src="images/b-product-item__img3.jpg" alt="">
+											</div>
+											<div class="b-product-item__text">
+												<b>Starter Kit für den 
+												Maniküremeister</b>
+												<p>Professionelle UV-Lampe</p>
+											</div>
+											<div class="b-product-item__bottom">
+												<span class="b-product-item__price">7 255 €</span>
+												<button class="btn-product btn">IN DEN WARENKORB</button> 
+											</div>
+										</div>
+									</div>																																								
+								</div>
+								<div class="row">
+									<div class="col-xl">
+										<div class="b-pagination">
+											<button class="b-paginatio-arrow b-prev"><i class="fas fa-chevron-left"></i></button>
+											<ul>
+												<li><a href="">1</a></li>
+												<li><a href="">2</a></li>
+												<li class="active"><a href="">3</a></li>
+												<li><a href="">4</a></li>
+												<li><a href="">5</a></li>
+											</ul>
+											<button class="b-paginatio-arrow b-next"><i class="fas fa-chevron-right"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end b-content --> 
+		</div>
+
+		<!-- begin b-footer -->
+		<footer class="b-footer">
+			<div class="b-footer-content">
+				<div class="b-footer-left">
+					<div class="b-footer-left__wrap">
+						<div class="b-footer-top">
+							<div class="b-footer-logo">
+								<img src="images/footer-logo.png" alt="">
+							</div>			
+							<p>10 Jahre Erfahrung in den Bereichen Maniküre und Pediküre, 
+							Kontextwerbung, Analyse und Bewertung der Wirksamkeit von Attraktionskanälen
+							</p>			
+						</div>
+						<div class="b-footer-wrap">
+							<div class="b-footer-contacts">
+								<div class="b-footer-item">
+									<div class="b-footer-item__ico">
+										<img src="images/phone-call.svg" alt="">
+									</div>
+									<div class="b-footer-item__text">
+										<span>Telefon:</span>
+										<a href="tel:8 900 070-70-70">8 900 070-70-70</a>
+									</div>
+								</div>
+								<div class="b-footer-item">
+									<div class="b-footer-item__ico">
+										<img src="images/envelope.svg" alt="">
+									</div>
+									<div class="b-footer-item__text">
+										<span>E-mail:</span>
+										<a href="tel:Anastasia@gmail.com">Anastasia@gmail.com</a>
+									</div>
+								</div>
+								<div class="b-footer-item">
+									<div class="b-footer-item__ico">
+										<img src="images/telegram.svg" alt="">
+									</div>
+									<div class="b-footer-item__text">
+										<span>Telegramm:</span>
+										<a href="">Anastasia_telegram</a>
+									</div>
+								</div>														
+							</div>
+							<div class="b-footer-list">
+								<ul>
+									<li><a href="">Über mich</a></li>
+									<li><a href="">Kurse</a></li>
+									<li><a href="">Geschäft</a></li>
+									<li><a href="">Nachrichten</a></li>
+									<li><a href="">Galerie</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="b-footer-bottom">
+							<div class="b-copyright">© 2019 Consulting Theme by ANASTASIA.com</div>
+							<div class="b-footer-social">
+								<ul>
+									<li><a href=""><img src="images/instagram.svg" alt=""></a></li>
+									<li><a href=""><img src="images/facebook-logo.svg" alt=""></a></li>
+									<li><a href=""><img src="images/google-plus-logo.svg" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="b-footer-right">
+					<div class="b-footer-right__wrap">
+						<div class="b-form">
+							<div class="b-form-title">
+								<div class="b-form-title__ico"></div>
+								<span>Melden Sie sich für Kurse an</span>
+							</div>
+							<form action="">
+								<input class="b-footer-input b-footer-input__name" type="text" placeholder="Ihr Name">
+								<input class="b-footer-input b-footer-input__phone" type="text" placeholder="Ihre telefonnummer">
+								<textarea class="b-footer-input b-footer-input__textarea" placeholder="Ihre Nachricht"></textarea>
+								<div class="b-form-bottom">
+									<input class="b-footer-btn btn" type="submit" value="ABSENDEN">
+									<div class="b-checkbox">
+										<input type="checkbox" checked id="g2" name="g4" />
+										<label for="g2"><span></span><i>Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage erhoben und verarbeitet werden. Die Daten werden nach abgeschlossener Bearbeitung Ihrer Anfrage gelöscht.</i></label>  
+									</div>										
+								</div>
+								<p>Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an info@anastasia-walter.de widerrufen. Detaillierte Informationen zum Umgang mit Nutzerdaten finden Sie in unserer Datenschutzerklärung</p>
+							</form>
+						</div>
+						<div class="b-map">
+							<div class="b-map-text">
+								<span>18 Red Avenue, Apt 5
+								26 King's Road, Off 65</span>
+							</div>
+							<div class="b-map-img">
+								<img src="images/map.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end b-footer -->
+		
+</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv9-H5GwlZA4EkUorU0gGHrq0H4pFMPS4"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
