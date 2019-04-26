@@ -1332,6 +1332,9 @@ textarea{
 .b-content-top{
 	
 }
+.b-content-top i{
+	display: none;
+}
 .b-content-top span{
 	display: block;
 	color: #554c55;
