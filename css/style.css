@@ -377,9 +377,6 @@ textarea{
 	list-style: none;
 }
 .b-social ul li a{
-	color: #c7a378;
-	font-size: 16px;
-	line-height: 18px;
 	display: block;
 	padding: 10px 16px;
 	-webkit-box-sizing: border-box;
@@ -387,6 +384,12 @@ textarea{
 	box-sizing: border-box;
     border-right: 1px solid rgba(138, 138, 138, 0.4);
 	transition: 0.3s;
+}
+.b-social ul li a img{
+	width: 17px;
+	max-width: inherit;
+	display: block;
+	margin: 0 auto 0;
 }
 .b-social ul li a:hover{
 	opacity: 0.6;
@@ -1084,9 +1087,11 @@ textarea{
 	justify-content: flex-start;
 	align-items: center;
 	text-decoration: none;
+	transition: 0.3s;
 }
 .b-footer-list ul li a:hover{
 	opacity: 0.8;
+	transition: 0.3s;
 }
 .b-footer-list ul li a:before{
 	content: "›";
@@ -1129,9 +1134,11 @@ textarea{
 .b-footer-social ul li a{
 	width: 22px;
 	display: block;
+	transition: 0.3s;
 }
 .b-footer-social ul li a:hover{
 	opacity: 0.8;
+	transition: 0.3s;
 }
 .b-footer-right{
 	position: relative;

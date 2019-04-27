@@ -272,38 +272,6 @@ $(document).on('click', function(e) {
 
 
 
-
-function moveMenu(){
-  if ($(window).width() < 768) {
-         $(function(){ 
-
-
-          $('.b-phone').appendTo('.b-menu');
-          $('.btn-callback').appendTo('.b-menu');
-
-        
-           
-        })            
-  } else{
-         $(function(){ 
-
-          $('.b-phone').appendTo('.b-phone-wrap');
-          $('.btn-callback').appendTo('.btn-callback__wrap');
-
-           
-     })        
-  }
-}
-moveMenu();
-
-$(window).resize(function(){
-    moveMenu();
-});
- 
-
-
-
-
 });
 
 
